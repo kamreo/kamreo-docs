@@ -1,4 +1,13 @@
 {
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "> Useful docs are collection of topics and solutions, that I look for very often. To speed up the process I put all of the stuff here, regarding IT but also some other areas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "docsify-darklight-theme": "^3.2.0"
   }
