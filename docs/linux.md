@@ -12,11 +12,6 @@ To install packages RHEL distros use yum and debian based use apt
 - Ubuntu 
 - Kali Linux 
 
-## Files section: 
-"-"  at the beginning means it's a file \
-d at the beginning directory \
-l - link file \
-b - block disk e.g. sda 
 
 ## Commands:  
 file = to check what type of file it is \
@@ -42,6 +37,45 @@ some_output > some_file.txt = overwritng file if exists \
 ls | wc -l = counting number of files \
 ls | grep host = get all the files that start with name host 
 
+## Users and groups
+
+![User types](./images/linux/users.png)
+
+You can see users in directory /etc/passwd  \
+You can see groups in directory /etc/group  \
+User passwords are stored and encrypted in /etc/shadows directory 
+### Commands
+id username = retrieves data about user  \
+useradd username = creates user with partricular username \
+groupaadd groupname = creates groutp with particular name \
+usermod -aG groupname username = adds user to a group \
+passwd = change password for user \
+last = info about users logins \
+lsof -i username = overall info what user was doing                          \
+userdel -r username = deleting user and r flag means together with directory \
+groupdel = deleting groups 
+
+## Permissions
+
+![Permissions](./images/linux/permissions.png)
+
+r = read permissions
+w = write permissions 
+x = execute permissions 
+
+### Commands: 
+chmod = changing permissions \
+chmod o-x = removing execute permissions for others \
+chmod g+w = adding write permissions for group \
+chown = changing ownership
+visudo = modifying sudo usage permissions -> add line: "username ALL=(ALL)   NOPASSWD:ALL", to grant sudo permissions to particular user
+
+## Files section: 
+"-"  at the beginning means it's a file \
+d at the beginning directory \
+l - link file \
+b - block disk e.g. sda 
+
 ## Vim: 
 3 modes (command mode (press esc), insert mode (press i), extender mode (press :)) \
 Vim makes work faster than nano and is installed usually by default unlike editors like nano 
@@ -55,6 +89,5 @@ yy - copy line \
 p - paste line \
 dd - delete line \
 u - undo \
-/ + word to search -> next occurance with letter n 
+/ + word to search -> next occurance with letter n
 
-	
