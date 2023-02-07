@@ -91,3 +91,11 @@ dd - delete line \
 u - undo \
 / + word to search -> next occurance with letter n
 
+## Pipe commands:
+The Pipe is a command in Linux that lets you use two or more commands such that output of one command serves as input to the next. In short, the output of each process directly as input to the next one like a pipeline. The symbol ‘|’ denotes a pipe. \
+Examples: \
+ps -ef | grep httpd | grep -v 'grep' | awk '{print $2}' | xargs kill -9 \
+
+Command above searches for processes called httpd and gets their PID to then pass it to kill command with force parameter
+
+
