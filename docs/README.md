@@ -1,6 +1,6 @@
-# About the useful docs 
+# About the kamreo docs 
 
-> Useful docs are collection of topics and solutions, that I look for very often. To speed up the process I put all of the stuff here, regarding IT but also some other areas. 
+> Useful docs are collection of topics and solutions, that I need to look for systematically. To speed up the process I put all the content here and gather everything in one place. 
 
 # Docsify 
 
